@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="80dp"
+        android:hint="USERNAME"
+
+
+        android:id="@+id/loginStr"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:id="@+id/passStr"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:id="@+id/loginButton"
+        android:onClick="checkUser"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="NEW USER"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:id="@+id/newUser"
+        android:onClick="openNewUser"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"/>
+
+</LinearLayout>
